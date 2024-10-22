@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نمایش تصویر به اندازه A4</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background-color: #c446b7;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      /* رنگ پس‌زمینه */
+    }
+
+    .container {
+      width: 210mm;
+      /* عرض A4 */
+      height: 297mm;
+      /* ارتفاع A4 */
+      overflow: hidden;
+      /* جلوگیری از نمایش قسمت‌های اضافی تصویر */
+      border: 1px solid #000;
+      /* مرز برای مشاهده اندازه */
+    }
+
+    img {
+      width: 100%;
+      /* عرض تصویر 100% */
+      height: auto;
+      /* حفظ نسبت ابعاد تصویر */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="your-image-url.jpg" alt="تصویر شما">
+  </div>
+</body>
+
+</html>
